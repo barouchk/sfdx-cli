@@ -23,3 +23,5 @@ RUN apk add --update --no-cache  \
 RUN npm install sfdx-cli --global
 RUN sfdx --version
 RUN sfdx plugins --core
+RUN npm install -g sfdx-git-delta
+
