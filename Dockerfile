@@ -27,3 +27,6 @@ RUN sfdx plugins --core
 RUN npm install sfdx-git-delta@latest --global
 RUN sgd --version
 
+RUN wget https://github.com/pmd/pmd/releases/download/pmd_releases%2F$PMD_VERSION/pmd-bin-$PMD_VERSION.zip
+RUN unzip pmd-bin-$PMD_VERSION.zip
+
